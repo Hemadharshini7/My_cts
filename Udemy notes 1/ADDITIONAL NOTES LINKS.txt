@@ -1,0 +1,5 @@
+ADDITIONAL NOTES LINKS
+
+https://www.tutorialspoint.com/sdlc/sdlc_overview.htm
+
+https://medium.com/omarelgabrys-blog/software-engineering-software-process-and-software-process-models-part-2-4a9d06213fdc
