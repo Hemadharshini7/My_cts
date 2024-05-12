@@ -1,0 +1,109 @@
+
+CTS+2318406@LTIN358294 MINGW64 ~/GitDemo (master)
+$ git checkout GitWork
+error: Your local changes to the following files would be overwritten by checkout:
+        file1.txt
+        file2
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+CTS+2318406@LTIN358294 MINGW64 ~/GitDemo (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   file1.txt
+        modified:   file2
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        GitDemo/
+        Hema.txt
+
+
+CTS+2318406@LTIN358294 MINGW64 ~/GitDemo (master)
+$ git checkout -b GitWork1
+Switched to a new branch 'GitWork1'
+
+CTS+2318406@LTIN358294 MINGW64 ~/GitDemo (GitWork1)
+$ echo "<xml></xml>" >> hello.xml
+
+CTS+2318406@LTIN358294 MINGW64 ~/GitDemo (GitWork1)
+$ git add hello.xml
+warning: in the working copy of 'hello.xml', LF will be replaced by CRLF the next time Git touches it
+
+CTS+2318406@LTIN358294 MINGW64 ~/GitDemo (GitWork1)
+$ git status
+On branch GitWork1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   file1.txt
+        modified:   file2
+        modified:   hello.xml
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        GitDemo/
+        Hema.txt
+
+
+CTS+2318406@LTIN358294 MINGW64 ~/GitDemo (GitWork1)
+$ git commit -m "1st"
+[GitWork1 4fda566] 1st
+ 3 files changed, 3 insertions(+), 2 deletions(-)
+
+CTS+2318406@LTIN358294 MINGW64 ~/GitDemo (GitWork1)
+$ git push -u origin GitWork1
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (13/13), 1.02 KiB | 349.00 KiB/s, done.
+Total 13 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+remote:
+remote: Create a pull request for 'GitWork1' on GitHub by visiting:
+remote:      https://github.com/Hemadharshini2318406/GitDemo/pull/new/GitWork1
+remote:
+To https://github.com/Hemadharshini2318406/GitDemo.git
+ * [new branch]      GitWork1 -> GitWork1
+branch 'GitWork1' set up to track 'origin/GitWork1'.
+
+CTS+2318406@LTIN358294 MINGW64 ~/GitDemo (GitWork1)
+$ git checkout master
+Switched to branch 'master'
+
+CTS+2318406@LTIN358294 MINGW64 ~/GitDemo (master)
+$ echo "<title></title>" >> hello.xml
+
+CTS+2318406@LTIN358294 MINGW64 ~/GitDemo (master)
+$ git add hello.xml
+warning: in the working copy of 'hello.xml', LF will be replaced by CRLF the next time Git touches it
+
+CTS+2318406@LTIN358294 MINGW64 ~/GitDemo (master)
+$ git commit -m "1st in master"
+[master 1b56acc] 1st in master
+ 1 file changed, 1 insertion(+)
+
+CTS+2318406@LTIN358294 MINGW64 ~/GitDemo (master)
+$ git log --oneline --graph --decorate --all
+* 1b56acc (HEAD -> master) 1st in master
+| * 4fda566 (origin/GitWork1, GitWork1) 1st
+|/
+* 6234b63 (GitNewBranch1) 1st in master
+* 6408807 1st
+* f114119 (origin/GitWork, GitWork) adding commit
+* 6bbbdf0 My first commit
+
+CTS+2318406@LTIN358294 MINGW64 ~/GitDemo (master)
+$ git commit -m "done"
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        GitDemo/
+        Hema.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+CTS+2318406@LTIN358294 MINGW64 ~/GitDemo (master)
+$

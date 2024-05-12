@@ -1,0 +1,54 @@
+
+CTS+2318406@LTIN358294 MINGW64 ~/GitDemo (master)
+$ git branch
+  GitNewBranch1
+  GitWork
+  GitWork1
+* master
+
+CTS+2318406@LTIN358294 MINGW64 ~/GitDemo (master)
+$ git pull origin main
+fatal: couldn't find remote ref main
+
+CTS+2318406@LTIN358294 MINGW64 ~/GitDemo (master)
+$ git pull origin main
+fatal: couldn't find remote ref main
+
+CTS+2318406@LTIN358294 MINGW64 ~/GitDemo (master)
+$ git pull origin master
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), 901 bytes | 18.00 KiB/s, done.
+From https://github.com/Hemadharshini2318406/GitDemo
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+Auto-merging hello.xml
+CONFLICT (content): Merge conflict in hello.xml
+Automatic merge failed; fix conflicts and then commit the result.
+
+CTS+2318406@LTIN358294 MINGW64 ~/GitDemo (master|MERGING)
+$ git push GitDemo02 master
+fatal: 'GitDemo02' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+CTS+2318406@LTIN358294 MINGW64 ~/GitDemo (master|MERGING)
+$ git push GitDemo master
+Enumerating objects: 17, done.
+Counting objects: 100% (17/17), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (17/17), 1.24 KiB | 634.00 KiB/s, done.
+Total 17 (delta 3), reused 0 (delta 0), pack-reused 0
+To GitDemo
+ * [new branch]      master -> master
+
+CTS+2318406@LTIN358294 MINGW64 ~/GitDemo (master|MERGING)
+$ git push GitDemo master
+Everything up-to-date
+
+CTS+2318406@LTIN358294 MINGW64 ~/GitDemo (master|MERGING)
+$

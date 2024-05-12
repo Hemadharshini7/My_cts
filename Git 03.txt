@@ -1,0 +1,151 @@
+CTS+2318406@LTIN358294 MINGW64 ~/GitDemo (master)
+$ cd ~
+
+CTS+2318406@LTIN358294 MINGW64 ~
+$ pwd
+/c/Users/2318406
+
+CTS+2318406@LTIN358294 MINGW64 ~
+$ cd ../../git/GitDemo
+bash: cd: ../../git/GitDemo: No such file or directory
+
+CTS+2318406@LTIN358294 MINGW64 ~
+$ cd GitDemo
+
+CTS+2318406@LTIN358294 MINGW64 ~/GitDemo (master)
+$ git branch GitNewBranch
+fatal: a branch named 'GitNewBranch' already exists
+
+CTS+2318406@LTIN358294 MINGW64 ~/GitDemo (master)
+$ git checkout master
+Already on 'master'
+M       file1.txt
+M       file2
+
+CTS+2318406@LTIN358294 MINGW64 ~/GitDemo (master)
+$ git checkout GitNewBranch
+Switched to branch 'GitNewBranch'
+M       file1.txt
+M       file2
+
+CTS+2318406@LTIN358294 MINGW64 ~/GitDemo (GitNewBranch)
+$ pwd
+/c/Users/2318406/GitDemo
+
+CTS+2318406@LTIN358294 MINGW64 ~/GitDemo (GitNewBranch)
+$ nano file1.txt
+
+CTS+2318406@LTIN358294 MINGW64 ~/GitDemo (GitNewBranch)
+$ mkdir folder1
+mkdir: cannot create directory ‘folder1’: File exists
+
+CTS+2318406@LTIN358294 MINGW64 ~/GitDemo (GitNewBranch)
+$ nano file2
+
+CTS+2318406@LTIN358294 MINGW64 ~/GitDemo (GitNewBranch)
+$ cd ..
+
+CTS+2318406@LTIN358294 MINGW64 ~
+$ ls
+ AppData/                 Links/                                                                                        'OneDrive - Cognizant'/   bash
+'Application Data'@      'Local Settings'@                                                                               PrintHood@               eclipse/
+ Contacts/                Music/                                                                                         Recent@                  eclipse-workspace/
+ Cookies@                'My Documents'@                                                                                'Saved Games'/            file.log
+ Documents/               NTUSER.DAT                                                                                     Searches/                ntuser.dat.LOG1
+ Downloads/               NTUSER.DAT{1c2b59c6-c5f5-11eb-bacb-000d3a96488e}.TM.blf                                        SendTo@                  ntuser.dat.LOG2
+ Favorites/               NTUSER.DAT{1c2b59c6-c5f5-11eb-bacb-000d3a96488e}.TMContainer00000000000000000001.regtrans-ms  'Start Menu'@             ntuser.ini
+ GitDemo/                 NTUSER.DAT{1c2b59c6-c5f5-11eb-bacb-000d3a96488e}.TMContainer00000000000000000002.regtrans-ms   Templates@
+ IntelGraphicsProfiles/   NetHood@                                                                                       Videos/
+
+CTS+2318406@LTIN358294 MINGW64 ~
+$ git checkout master
+fatal: not a git repository (or any of the parent directories): .git
+
+CTS+2318406@LTIN358294 MINGW64 ~
+$ git checkout main
+fatal: not a git repository (or any of the parent directories): .git
+
+CTS+2318406@LTIN358294 MINGW64 ~
+$ cd GitDemo
+
+CTS+2318406@LTIN358294 MINGW64 ~/GitDemo (GitNewBranch)
+$ git checkout master
+Switched to branch 'master'
+M       file1.txt
+M       file2
+
+CTS+2318406@LTIN358294 MINGW64 ~/GitDemo (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   file1.txt
+        modified:   file2
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        GitDemo/
+        Hema.txt
+
+
+CTS+2318406@LTIN358294 MINGW64 ~/GitDemo (master)
+$ git add .
+error: 'GitDemo/' does not have a commit checked out
+fatal: adding files failed
+
+CTS+2318406@LTIN358294 MINGW64 ~/GitDemo (master)
+$ git add file1.txt
+
+CTS+2318406@LTIN358294 MINGW64 ~/GitDemo (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   file1.txt
+        modified:   file2
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        GitDemo/
+        Hema.txt
+
+
+CTS+2318406@LTIN358294 MINGW64 ~/GitDemo (master)
+$ git add file2
+
+CTS+2318406@LTIN358294 MINGW64 ~/GitDemo (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   file1.txt
+        modified:   file2
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        GitDemo/
+        Hema.txt
+
+
+CTS+2318406@LTIN358294 MINGW64 ~/GitDemo (master)
+$ git add GitDemo
+error: 'GitDemo/' does not have a commit checked out
+fatal: adding files failed
+
+CTS+2318406@LTIN358294 MINGW64 ~/GitDemo (master)
+$ git merge GitNewBranch
+Already up to date.
+
+CTS+2318406@LTIN358294 MINGW64 ~/GitDemo (master)
+$ git log --oneline --graph --decorate
+* 6234b63 (HEAD -> master, GitNewBranch1, GitNewBranch) 1st in master
+* 6408807 1st
+* f114119 (origin/GitWork, GitWork) adding commit
+* 6bbbdf0 My first commit
+
+CTS+2318406@LTIN358294 MINGW64 ~/GitDemo (master)
+$ git branch -d GitNewBranch
+Deleted branch GitNewBranch (was 6234b63).
+
+CTS+2318406@LTIN358294 MINGW64 ~/GitDemo (master)
+$
