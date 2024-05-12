@@ -1,0 +1,260 @@
+Received: from TY0PR02MB5624.apcprd02.prod.outlook.com (2603:1096:400:1b0::7)
+ by PSAPR02MB4855.apcprd02.prod.outlook.com with HTTPS; Thu, 21 Mar 2024
+ 14:30:36 +0000
+Received: from SG2PR06CA0182.apcprd06.prod.outlook.com (2603:1096:4:1::14) by
+ TY0PR02MB5624.apcprd02.prod.outlook.com (2603:1096:400:1b0::7) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.7386.27; Thu, 21 Mar 2024 14:30:34 +0000
+Received: from HK3PEPF0000021C.apcprd03.prod.outlook.com
+ (2603:1096:4:1:cafe::5d) by SG2PR06CA0182.outlook.office365.com
+ (2603:1096:4:1::14) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7386.27 via Frontend
+ Transport; Thu, 21 Mar 2024 14:30:33 +0000
+Authentication-Results: spf=pass (sender IP is 76.223.180.37)
+ smtp.mailfrom=ap-south-1.amazonses.com; dkim=pass (signature was verified)
+ header.d=amazonses.com;dmarc=none action=none
+ header.from=tekstac.com;compauth=pass reason=102
+Received-SPF: Pass (protection.outlook.com: domain of ap-south-1.amazonses.com
+ designates 76.223.180.37 as permitted sender)
+ receiver=protection.outlook.com; client-ip=76.223.180.37;
+ helo=c180-37.smtp-out.ap-south-1.amazonses.com; pr=C
+Received: from c180-37.smtp-out.ap-south-1.amazonses.com (76.223.180.37) by
+ HK3PEPF0000021C.mail.protection.outlook.com (10.167.8.38) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.7409.10 via Frontend Transport; Thu, 21 Mar 2024 14:30:33 +0000
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=rlntogby6xsxlfnvyxwnvvhttakdsqto; d=amazonses.com; t=1711031433;
+	h=Date:To:From:Reply-To:Subject:Message-ID:MIME-Version:Content-Type:Content-Transfer-Encoding:Feedback-ID;
+	bh=4blGP6XEiD463i6Kzc2HqynAJivNYO+Msir0P262AYQ=;
+	b=ZZqFNJ56tNBzP8qMQY7HWE5tZyzJugTdQwC3CkDbSNdMMxgbNpsCBIrKDQTxpEFv
+	yJ1jyoyYYdzQB2k6KIrc2U0fo8xsBTIMf82QIiRBzbUgcqm6d7Lt/xi/2ac1fSA4Ezu
+	5tdW/wWsJwTxbDEL8uPNWtF3O9/o7hSqJiJ5BT70=
+Date: Thu, 21 Mar 2024 14:30:33 +0000
+To: Hemadharshini.S@cognizant.com
+From: Cognizant Academy GenC <admin@tekstac.com>
+Reply-To: Cognizant Academy GenC <admin@tekstac.com>
+Subject: GenC Skilling 2023 - Result status: Interview S&PE-CSDADM24SJ005-Interim
+ Evaluation
+Message-ID: <0109018e616bb79b-6128f232-0937-4029-8d06-376f89d9ae7e-000000@ap-south-1.amazonses.com>
+X-Mailer: PHPMailer 6.0.1 (https://github.com/PHPMailer/PHPMailer)
+Content-Type: multipart/alternative;
+	boundary="b1_spQnjBKNaojcLbQ6sARhimty4jo1vx1dVgSaQdnh5eI"
+Content-Transfer-Encoding: 8bit
+Feedback-ID: 1.ap-south-1.HtfxCPOvLjUQ770kz01w5KIcO2UUfWyFaOvtqKSEzHU=:AmazonSES
+X-SES-Outgoing: 2024.03.21-76.223.180.37
+Return-Path:
+ 0109018e616bb79b-6128f232-0937-4029-8d06-376f89d9ae7e-000000@ap-south-1.amazonses.com
+X-MS-Exchange-Organization-ExpirationStartTime: 21 Mar 2024 14:30:33.7308
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ cc3cf159-d578-4f0a-8f27-08dc49b377c7
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: de08c407-19b9-427d-9fe8-edf254300ca7:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic:
+ HK3PEPF0000021C:EE_|TY0PR02MB5624:EE_|PSAPR02MB4855:EE_
+X-MS-Exchange-Organization-AuthSource:
+ HK3PEPF0000021C.apcprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: cc3cf159-d578-4f0a-8f27-08dc49b377c7
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:76.223.180.37;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:c180-37.smtp-out.ap-south-1.amazonses.com;PTR:c180-37.smtp-out.ap-south-1.amazonses.com;CAT:NONE;SFS:(13230031);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 21 Mar 2024 14:30:33.4808
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: cc3cf159-d578-4f0a-8f27-08dc49b377c7
+X-MS-Exchange-CrossTenant-Id: de08c407-19b9-427d-9fe8-edf254300ca7
+X-MS-Exchange-CrossTenant-AuthSource:
+ HK3PEPF0000021C.apcprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: TY0PR02MB5624
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.7637329
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.7386.023
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(930097)(140003)(1420198);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?dFJJUmJOc2NCVXNhdUtEeDFSdVkyOUZwbHJ4aGV1T2pNSStrNUpjbUZ6YUdp?=
+ =?utf-8?B?SkVmdm5DYXJjdGgvaWc3di9iNTVtNGw0ZEIybEoyaTVvcTJrQVQrY3RlcjBJ?=
+ =?utf-8?B?b0FwY2ZuN0YxeFp5T215eFFWQ2hjQkpmalhFUjgxdjhBMmMzczFCcTgxakhQ?=
+ =?utf-8?B?bFBJbzVNR1Bhd2psWmp3M3NUYloxSWtkeDdHc3U0VzBoRHN3Y2w3czFTaHdn?=
+ =?utf-8?B?VmN6WDBJZXUvREZoUndvTmZmbWZJT1lMcWY5ekNzNm5NWDE3RmgyTnFsaUFP?=
+ =?utf-8?B?cy9iMkR2WWhyNmdSS3diS2UwRTZTZWxueVhzZHJmd3JoRHpQSmVIeThCd0c0?=
+ =?utf-8?B?RXFGbnBYcVN3WnBPaEJYMFh3SG1iRXZxZEZUYzY2Vk05NEJ3WnlwZXBWVEhL?=
+ =?utf-8?B?ODFod0o0TWRxQWlEU1Y5eFdsNzhDS0UzMldtam5PZk0xN2NXMXpzelZrSDAx?=
+ =?utf-8?B?VjBVd0h0NHNyOFFSeitWcmk4QW0zRkpLZlZYN2E0aGt3YzBLUGFRVy90Sktj?=
+ =?utf-8?B?OUVxVjk2YW54ckQ5bVBFWnZZWWYvdi95eGtuRVFFYnQ0YXA4ank2enlNMmJZ?=
+ =?utf-8?B?VzJqcXdTWVA2SDdFNnc1Uk9Cb0lYb2pUZGl3U0lDa1lxNVdmUUs3OVJBbGRs?=
+ =?utf-8?B?TmJaL0d3b3FQWlZoVmJiZlBlcjFQbGVKMXdmdHE1YjdsVVQ2bCtzUGdlTEVG?=
+ =?utf-8?B?OGRxZVVoQzR4RmFPeU9HTXN2U2VINmN1KzNLTktNTmo0SEdzc0VYNTYrUTgy?=
+ =?utf-8?B?Q0tlUlRkTkxWTFp6czZReFNqWlduMHBmQ3BoSG5jYXBjandDTUdpenlmdG1q?=
+ =?utf-8?B?ajRNOFZxZEVseFFvNG8zUHlCYmFOS1Z2cWw1Wnd5SU9teFNmQkI5WlpBM2tW?=
+ =?utf-8?B?T0x0NDlKZmFkdHNTOHdUZ1o2TkY2VUlBM1YwRlRjbFRhQzBiM0VDYzFKQ3k1?=
+ =?utf-8?B?SDRxcnlvRStsUlpJZ1FCdXB1eS84bEgxTUpvbEhrWWRDS3Y4VnliUWtIU21Z?=
+ =?utf-8?B?aEJLY0JUN01KZWZLeUE0OFFEYk9xQ3h5cUxmYXhOQlNMdzQxMUNDcDAwNys5?=
+ =?utf-8?B?RkpYNFo5UTZXMnhlb0VFbmhqZUNQa3QvSTFwbUJuM0FWdTZtRDcxRGQ2Rm95?=
+ =?utf-8?B?WUZtOSs1eStFSStkSlVZSlFKNWs4RDJ4SS94R2Z2cjZYWHFvN3NkM2VGM2dy?=
+ =?utf-8?B?aFFlQ2NkajNzclJpaDNkV1I2UFpIRklBN0dzN1g4bUhwcFV5Y2VGdXBMWHh3?=
+ =?utf-8?B?U290SkFhVXZzWjI5d3lnQ0I2M3pYWUl3clpPbUhtR3BYZ2NzOHlKbXdMeXo0?=
+ =?utf-8?B?Y0szOGlJTERaL2o0SU9VazFqb0IxUENuVWNibHUzek9aS2lSTkFTNmEzb0J1?=
+ =?utf-8?B?cXQ0dFRTSUN3R3ZXVGFWWmVxNUlSdW1LNVdNNlJXV0xMaWp3SGlSSTZjY1hH?=
+ =?utf-8?B?anBjdWI1TTN0Qk1IRzlVM3IyemY0OG5zQ1Y2WEZLTCsyQThTdTk2MHMzQ2ZR?=
+ =?utf-8?B?WUs4bTB0dCswUGdCbnVZMUxzZUhpZ21kT3dLeGJKY0JnZTg5TEJ1dTNOTS9n?=
+ =?utf-8?B?eUExQXFWNmpySEZJL0FhZU9xckhVWDVaTXQ2dlNjS0NrWjRHYU5ZQ0sxMXlS?=
+ =?utf-8?B?QmhwRUVWa3lBZ2EwMkVLQjJkM0xtUEVpTmJTd3NpRHVBYUxNZjRvNzhrUDhX?=
+ =?utf-8?B?d0M2SGN4MlZ0Z1R6YTU3eEZXQTkraXJia1Z4S0c5U0xXOUptVFMyOEJJQy9o?=
+ =?utf-8?B?NTBnbEgzMVMya0RJUXk1aW51c3poekkzbGxkMU04emVaMzVNWFkrZGJFanc1?=
+ =?utf-8?B?ZldpYmhkNnVLSU5qcFpIcWtXU3hzUDhaMU4vaE9MYU4yZkEwVVRjTm94U1Jk?=
+ =?utf-8?B?T2l6WkhTV3VyaEVPVkRxTmg1cHo0L1VMSkJMV3Z3TEpMdGFpaHVqNytVa2dH?=
+ =?utf-8?B?a2s4dWhIR3NuWGMrSDBWY2g2NlU0ZjR2Ry9keXZMTTIrczhtUlhqc2cwSkV4?=
+ =?utf-8?B?QitnbmRjZEpXTkRDTCtaK3c5eG9VSTZlNWRHbXRqRFVlMFJqMVB2U01Jenlp?=
+ =?utf-8?B?dVJjMGpMM0RxT1NXU1BSNkRBYjVZOEFEcGx2dUVUSjZXR0UvajNUa3hTWEVU?=
+ =?utf-8?B?ck4zUmZBaTFORXhPb0YweHp6cHUxZkVCZncyd3ZoUmpsd3JCQS9nVVF1T2ZQ?=
+ =?utf-8?B?THQyUDdlQitSbXFqbGpBMmE1dTBaMFlScDd1dnluZ3k3L2hIRkhpMjlBNTFw?=
+ =?utf-8?B?MllaSWVXVVh0NHdEL1NtbHd4YWJpbkpNdzBWSE9ncTRWVkk3dS90MEYvekoy?=
+ =?utf-8?B?azkvd1l5VkU3ZzkvL2toQ2tLRm1BNmsxV1djRTJNa2M3U1hKa1d0amJmK1V5?=
+ =?utf-8?B?Qi96UU5leW5ZMksxV3MyL0haMWsxVlM4Y29EUlVPckFQQ0gyWjZUYlJtV3J1?=
+ =?utf-8?B?dnVEYVpNMUwzOWorQU1pcm43VitFdWQ1VExYZnlHUzRrMEZSYXcxbU5XUjZx?=
+ =?utf-8?B?WjBqUmgvQm9ZUG5hVC9UUkpRMld0MUtXMUZxU3pvS1NzaFB2WGdETzNwbFA1?=
+ =?utf-8?B?VzRQRHIwRTl6L284RDRRTGM5bG5VZ0RkanNKSWVnVUNVTFpIS0pGdkFoOGQ1?=
+ =?utf-8?B?SXM5bk1EbUF5QjA2Y0EzMTcrWXVjV0FmeEhSUXlQVEZJWjdST0doYUlicTNu?=
+ =?utf-8?B?QUMyUFhSQUgxOUJlQ0Q4aDRpUmpNZWpXUkoxR05FSFgrZjE5N1lESEQwamRY?=
+ =?utf-8?B?RDFyYmI4cy9MOUNkUjhPdUFIZVZMZStrQ09hckRnbUpJUnE4QkorMm8rOStl?=
+ =?utf-8?B?UnUwOFdYQlFaSlhnWDdZdUdXMzNMRHpyS2tYRXNCT2hYcmRGOFNrY3RDTVRM?=
+ =?utf-8?B?S1FjVkZEdTIwQmdjemF2OUNNdll1dGdCWVlTRmczK0s0aTBRbTNLamoyNkdp?=
+ =?utf-8?Q?IsIuO9wAen1FHiQm?=
+MIME-Version: 1.0
+
+--b1_spQnjBKNaojcLbQ6sARhimty4jo1vx1dVgSaQdnh5eI
+Content-Type: text/plain; charset=us-ascii
+
+This is the plain text version of the email content
+
+--b1_spQnjBKNaojcLbQ6sARhimty4jo1vx1dVgSaQdnh5eI
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" width="803" style="width:602.5pt; border-collapse:collapse; border:none">
+    <tbody>
+        <tr style="">
+            <td width="803" valign="top" style="width:602.5pt; border:solid #D9D9D9 1.0pt; border-bottom:none; padding:0cm 0cm 0cm 0cm">
+                <p class="MsoNormal" align="center" style="text-align:center"><a name="_MailOriginal"><span style=""><img width="800" height="160" id="Picture_x0020_88" src="https://cognizant-stage--image-repo.s3.ap-south-1.amazonaws.com/cognizant_mail_header.jpg" alt="A picture containing icon Description automatically generated"></span></a></p>
+            </td>
+
+        </tr>
+        <tr style="">
+            <td width="803" valign="top" style="width:602.5pt; border-top:none; border-left:solid #D9D9D9 1.0pt; border-bottom:none; border-right:solid #D9D9D9 1.0pt; padding:3.6pt 72.0pt 3.6pt 72.0pt">
+
+            </td>
+
+        </tr>
+        <tr style="height:12.75pt">
+            <td width="803" valign="top" style="width:602.5pt; border-top:none; border-left:solid #D9D9D9 1.0pt; border-bottom:none; border-right:solid #D9D9D9 1.0pt; padding:3.6pt 72.0pt 3.6pt 72.0pt; height:12.75pt">
+                <p class="MsoNormal"><span style=""><span style="font-size:11.0pt; font-family:&quot;Arial&quot;,sans-serif; color:#000048; background:white">Dear
+                            <b>Hemadharshini S</b></span></span><span style=""><span style="font-size:11.0pt; font-family:&quot;Arial&quot;,sans-serif; color:#000048">,&nbsp;</span></span>
+                </p>
+
+                <p class="MsoNormal"><span style=""><span style="font-size:11.0pt; font-family:&quot;Arial&quot;,sans-serif; color:#000048; background:white">I hope this message finds you well. We are pleased to inform you of your recent interview S&amp;PE-CSDADM24SJ005-Interim Evaluation performance. Your RAG status is as follows:</span></span>
+                </p>
+                <p></p>
+
+            </td>
+
+        </tr>
+
+        <tr style="height:12.75pt">
+            <td width="803" valign="top" style="width:602.5pt; border-top:none; border-left:solid #D9D9D9 1.0pt; border-bottom:none; border-right:solid #D9D9D9 1.0pt; padding:3.6pt 72.0pt 3.6pt 72.0pt; height:12.75pt; background: #a8cef585;">
+
+                <p class="MsoNormal" style="margin-bottom: 0px;"><span style=""><b><span style="font-size:11.0pt; font-family:&quot;Arial&quot;,sans-serif; color:#000048; ">RAG Status</span></b>&nbsp;</span><span style=""><span style="font-size:11.0pt; font-family:&quot;Arial&quot;,sans-serif; color:#000048; "><b>: </b></span></span>
+                    <span style=""><b><span style="font-size:11.0pt; font-family:&quot;Arial&quot;,sans-serif; color:#000048;"> GREEN</span></b>
+                    </span>
+                </p><span style=""></span>
+                <p></p>
+
+                <p></p>
+
+                <p class="MsoNormal"><span style=""><span style="font-size:11.0pt; font-family:&quot;Arial&quot;,sans-serif; color:#000048; font-style: italic;">
+                    Here are the details of the interview:</span></span>
+                </p>
+
+                <p class="MsoNormal" style="margin-bottom: 0px;"><span style=""><b><span style="font-size:11.0pt; font-family:&quot;Arial&quot;,sans-serif; color:#000048; ">Candidate's Name</span></b>
+                    </span><span style=""><span style="font-size:11.0pt; font-family:&quot;Arial&quot;,sans-serif; color:#000048; ">
+                            <b>: </b></span></span><span style=""><b><span style="font-size:11.0pt; font-family:&quot;Arial&quot;,sans-serif; color:#000048;">Hemadharshini S</span></b>
+                    </span><span style=""><span style="font-size:11.0pt; font-family:&quot;Arial&quot;,sans-serif; color:#000048;">
+                            <b></b></span></span><span style=""></span></p>
+
+                <p class="MsoNormal" style="margin: 0px;"><span style=""><b><span style="font-size:11.0pt; font-family:&quot;Arial&quot;,sans-serif; color:#000048; ">Date</span></b>
+                    </span><span style=""><span style="font-size:11.0pt; font-family:&quot;Arial&quot;,sans-serif; color:#000048; ">
+                        <b>: </b></span></span><span style=""><b><span style="font-size:11.0pt; font-family:&quot;Arial&quot;,sans-serif; color:#000048;">2024-03-21</span></b>
+                    </span><span style=""><span style="font-size:11.0pt; font-family:&quot;Arial&quot;,sans-serif; color:#000048;">
+                        <b></b></span></span><span style=""></span></p>
+
+                <p class="MsoNormal" style="margin: 0px;"><span style=""><b><span style="font-size:11.0pt; font-family:&quot;Arial&quot;,sans-serif; color:#000048; ">Timeslot</span></b>
+                    </span><span style=""><span style="font-size:11.0pt; font-family:&quot;Arial&quot;,sans-serif; color:#000048; ">
+                        <b>: </b></span></span><span style=""><b><span style="font-size:11.0pt; font-family:&quot;Arial&quot;,sans-serif; color:#000048;">02:15 PM - 02:45 PM</span></b>
+                    </span><span style=""><span style="font-size:11.0pt; font-family:&quot;Arial&quot;,sans-serif; color:#000048;"><b></b></span></span><span style=""></span></p>
+                <p class="MsoNormal" style="margin: 0px;"><span style=""><b><span style="font-size:11.0pt; font-family:&quot;Arial&quot;,sans-serif; color:#000048;"><br></span></b>
+                    </span>
+                </p>
+
+                <p class="MsoNormal" style="margin-bottom: 0px;"><span style=""><span style="font-size:11.0pt; font-family:&quot;Arial&quot;,sans-serif; color:#000048; ">In addition to your grades, we would like to provide the following comments on your performance: <b>Associate was able to answer concept questions related to Exception Handling and Collections in Java. She was able to answer SQL concepts related to joins and constraints. She needs to remain calm and answer the questions and should not get tensed.</b> </span>
+                    </span>
+                    <span style=""></span>
+                </p>
+
+                <p class="MsoNormal"><span style="">&nbsp;</span></p>
+
+                <span style=""></span>
+                <p></p>
+            </td>
+
+        </tr>
+
+        <tr style="">
+            <td width="803" valign="top" style="width:602.5pt; border-top:none; border-left:solid #D9D9D9 1.0pt; border-bottom:none; border-right:solid #D9D9D9 1.0pt; padding:3.6pt 72.0pt 3.6pt 72.0pt">
+                <p></p>
+                <p class="MsoNormal"><span style=""><span style="font-size:11.0pt; font-family:&quot;Arial&quot;,sans-serif; color:#000048; "><span style="font-size: 11pt;">We believe that your continued effort and focus will lead to even greater success in the future. If you have any questions, please feel free to contact your respective coach.&nbsp;</span></span>
+                    </span>
+                </p>
+                <p class="MsoNormal"><span style=""><span style="font-size:11.0pt; font-family:&quot;Arial&quot;,sans-serif; color:#000048; "></span></span>
+                </p>
+                <p class="MsoNormal"><span style=""><span style="font-size:11.0pt; font-family:&quot;Arial&quot;,sans-serif; color:#000048; "><span style="font-size: 11pt;">We wish you continued success in your academic journey&nbsp;</span></span>
+                    </span>
+                </p>
+                <br>
+                <p class="MsoNormal" style="margin-bottom: 0px;"><span style=""><b><span style="font-family:&quot;Arial&quot;,sans-serif; color:#97999B">Regards,
+                                </span></b>
+                    </span>
+                </p>
+                <p class="MsoNormal" style="margin: 0px;"><span style=""><span style="font-family:&quot;Arial&quot;,sans-serif; color:#97999B">GenC HR Team</span><span style="color:#97999B"></span></span>
+                </p>
+            </td>
+
+        </tr>
+        <tr style="">
+            <td width="803" valign="bottom" style="width:602.5pt; border-top:none; border-left:solid #D9D9D9 1.0pt; border-bottom:none; border-right:solid #D9D9D9 1.0pt; padding:3.6pt 72.0pt 3.6pt 72.0pt">
+                <p class="MsoNormal" style="margin-top: 0px;"><span style=""><span style="font-size:8.0pt; font-family:&quot;Arial&quot;,sans-serif; color:#000048">© 2023
+                            Cognizant. All rights reserved.</span></span><span style=""><b><span style="font-family:&quot;Arial&quot;,sans-serif; color:#97999B"></span></b>
+                    </span>
+                </p>
+            </td>
+
+        </tr>
+
+        <tr style="">
+            <td width="803" valign="top" style="width:602.5pt; border:solid #D9D9D9 1.0pt; border-top:none; padding:0cm 0cm 0cm 0cm">
+                <span style=""></span>
+            </td>
+
+        </tr>
+    </tbody>
+</table>
+
+
+--b1_spQnjBKNaojcLbQ6sARhimty4jo1vx1dVgSaQdnh5eI--
